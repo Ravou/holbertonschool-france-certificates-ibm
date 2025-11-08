@@ -1,9 +1,10 @@
-import PyPDF2
+## 🎓 Certificat IBM Open Source (OS0101EN)
 
-path = r"\\wsl.localhost\Ubuntu-24.04\home\ravou\holbertonschool-france-certificates-ibm\image\IBM OS0101EN Certificate _ IBM SkillsBuild.pdf"
+Voici mon certificat IBM obtenu sur SkillsBuild :  
 
-with open(path, "rb") as file:
-    reader = PyPDF2.PdfReader(file)
-    for page in reader.pages:
-        print(page.extract_text())
+[📜 Voir le certificat PDF](../image/IBM_OS0101EN_Certificate.pdf)
+
+Ou aperçu intégré 👇 :
+
+<iframe src="../image/IBM_OS0101EN_Certificate.pdf" width="100%" height="600px"></iframe>
 
