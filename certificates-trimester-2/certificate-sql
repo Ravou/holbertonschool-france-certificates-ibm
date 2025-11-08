@@ -1,0 +1,9 @@
+import PyPDF2
+
+path = r"\\wsl.localhost\Ubuntu-24.04\home\ravou\holbertonschool-france-certificates-ibm\image\IBM DB0101EN Certificate _ IBM SkillsBuild.pdf"
+
+with open(path, "rb") as file:
+    reader = PyPDF2.PdfReader(file)
+    for page in reader.pages:
+        print(page.extract_text())
+
